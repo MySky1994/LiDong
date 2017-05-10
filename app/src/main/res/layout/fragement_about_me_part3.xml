@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar"
+        android:layout_marginLeft="@dimen/half_space_distance"
+        android:layout_marginRight="@dimen/half_space_distance"
+        android:layout_marginTop="@dimen/half_space_distance"
+        android:background="@color/mainColorWhite"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/select_tab_icon_size"
+            android:layout_height="@dimen/select_tab_icon_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_distance"
+            android:src="@mipmap/zuihaochengji" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_distance"
+            android:text="最好成绩"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/half_space_distance"
+        android:layout_marginRight="@dimen/half_space_distance"
+        android:background="@color/mainColorWhite"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_distance"
+            android:layout_marginRight="@dimen/space_distance"
+            android:background="@color/split_line"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/table_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="最远距离"
+                    android:textColor="@color/wordColorGray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="@dimen/table_margin"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="最长时间"
+                    android:textColor="@color/wordColorGray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="@dimen/table_margin"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="最快配速"
+                    android:textColor="@color/wordColorGray" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/table_margin"
+                android:layout_marginLeft="@dimen/table_margin"
+                android:layout_marginRight="@dimen/table_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_about_me_best_distance_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/wordColorGray" />
+
+                <TextView
+                    android:id="@+id/fragment_about_me_best_time_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="@dimen/table_margin"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/wordColorGray" />
+
+                <TextView
+                    android:id="@+id/fragment_about_me_best_speed_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="@dimen/table_margin"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/wordColorGray" />
+
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_distance"
+            android:layout_marginLeft="@dimen/space_distance"
+            android:layout_marginRight="@dimen/space_distance"
+            android:layout_marginTop="@dimen/half_space_distance"
+            android:background="@color/split_line"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/table_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="10KM最快时间"
+                    android:textColor="@color/wordColorGray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="@dimen/table_margin"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="半马最快时间"
+                    android:textColor="@color/wordColorGray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="@dimen/table_margin"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="全马最快时间"
+                    android:textColor="@color/wordColorGray" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/table_margin"
+                android:layout_marginLeft="@dimen/table_margin"
+                android:layout_marginRight="@dimen/table_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_about_me_best_10km_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/wordColorGray" />
+
+                <TextView
+                    android:id="@+id/fragment_about_me_best_half_ma_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="@dimen/table_margin"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/wordColorGray" />
+
+                <TextView
+                    android:id="@+id/fragment_about_me_best_ma_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="@dimen/table_margin"
+                    android:layout_weight="1"
+                    android:background="@color/mainColorWhite"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="@color/wordColorGray" />
+
+
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

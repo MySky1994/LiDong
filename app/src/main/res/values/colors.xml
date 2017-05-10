@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="mainColorBlue">#20c4e2</color>
+    <color name="mainColorLightBlue">#aa20c4e2</color>
+    <color name="mainColorWhite">#fdfdfe</color>
+    <color name="mainbgColorWhite">#f0f0f8</color>
+    <color name="smallWordColorGray">#aaa9ae</color>
+    <color name="bigWordColorBlack">#4f4f4f</color>
+    <color name="wordColorGray">#acacae</color>
+    <color name="wordColorDeepBlue">#308ab9</color>
+    <color name="selectTabColorBlue">#2cabcb</color>
+    <color name="selectTabColorWhite">#aaaead</color>
+    <color name="selectTabBGColorWhite">#f8f8f8</color>
+
+    <color name="advertColorGreen">#81f187</color>
+    <color name="selected_bg_blue">#aa2cabcb</color>
+    <color name="split_line">#f0f0f8</color>
+
+
+    <color name="rbt_seleted_bg">#057387</color>
+    <color name="rbt_unselet_bg">#a60890a9</color>
+    <color name="rbt_text_seleted">#c9f7f7f7</color>
+    <color name="rbt_text_unselet">#c9f7f7f7</color>
+
+
+</resources>

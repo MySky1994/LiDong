@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/fragment_info_banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/mainColorWhite"
+        app:image_scale_type="fit_xy"
+        app:indicator_drawable_selected="@drawable/icon_dot_selected"
+        app:indicator_drawable_unselected="@drawable/icon_dot_unselect"
+        app:indicator_height="8dp"
+        app:indicator_margin="4dp"
+        app:indicator_width="8dp"
+        app:title_background="#a09fd9e1"
+        app:title_height="32dp" />
+
+    <include layout="@layout/fragment_info_select_bar" />
+
+
+</LinearLayout>

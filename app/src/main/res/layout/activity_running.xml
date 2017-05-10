@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chestnut.lidong.ui.RunningActivity">
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/activity_running_top_bar" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/activity_running_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar" />
+
+    <RadioGroup
+        android:id="@+id/activity_running_rg"
+        android:layout_width="match_parent"
+        android:layout_height="35.0dip"
+        android:layout_below="@id/top_bar"
+        android:layout_marginBottom="7.5dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/activity_running_rbt1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radio_left_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="跟随"
+            android:textColor="@color/rbt_text_seleted" />
+
+        <RadioButton
+            android:id="@+id/activity_running_rbt2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_center_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="罗盘"
+            android:textColor="@color/rbt_text_seleted" />
+
+        <RadioButton
+            android:id="@+id/activity_running_rbt3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_right_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="普通"
+            android:textColor="@color/rbt_text_seleted" />
+    </RadioGroup>
+
+    <include
+        layout="@layout/activity_running_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

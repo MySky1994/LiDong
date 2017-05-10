@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48.0dp"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:id="@+id/fragment_menu_rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingTop="4dp">
+
+        <RadioButton
+            android:id="@+id/fragment_menu_rbt_first"
+            style="@style/fragment_menu"
+            android:background="#00000000"
+
+            android:drawableTop="@drawable/fragment_menu_of_bottom_first_image_selector"
+
+            android:text="运动" />
+
+        <RadioButton
+            android:id="@+id/fragment_menu_rbt_second"
+            style="@style/fragment_menu"
+            android:background="#00000000"
+            android:drawableTop="@drawable/fragment_menu_of_bottom_second_image_selector"
+            android:text="好友" />
+
+        <RadioButton
+            android:id="@+id/fragment_menu_rbt_third"
+            style="@style/fragment_menu"
+            android:background="#00000000"
+            android:drawableTop="@drawable/fragment_menu_of_bottom_third_image_selector"
+            android:text="资讯" />
+
+        <RadioButton
+            android:id="@+id/fragment_menu_rbt_fourth"
+            style="@style/fragment_menu"
+            android:background="#00000000"
+            android:checked="true"
+            android:drawableTop="@drawable/fragment_menu_of_bottom_fourth_image_selector"
+            android:text="关于我" />
+    </RadioGroup>
+
+</LinearLayout>

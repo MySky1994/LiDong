@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbgColorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_status_bar"
+        android:background="@color/mainColorBlue" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_info_top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/top_status_bar"
+        android:background="@color/mainColorBlue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="资讯"
+            android:textColor="@color/mainColorWhite"
+            android:textSize="@dimen/appbar_text" />
+
+        <ImageView
+            android:id="@+id/fragment_info_camera_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_distance"
+            android:clickable="true"
+            android:src="@drawable/icon_camera" />
+
+    </RelativeLayout>
+
+
+    <com.chestnut.lidong.ui.view.MyScrollView
+        android:id="@+id/fragment_info_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_info_top_bar_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/fragment_info_part1" />
+
+            <include layout="@layout/fragment_info_paoyouxiu_layout" />
+
+            <include layout="@layout/fragment_info_zhuangbeizixun_layout" />
+
+            <include layout="@layout/fragment_info_huodong_layout" />
+
+        </LinearLayout>
+
+    </com.chestnut.lidong.ui.view.MyScrollView>
+
+    <include
+        layout="@layout/fragment_info_static_part"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/fragment_info_top_bar_layout" />
+
+
+</RelativeLayout>

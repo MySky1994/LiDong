@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/mainColorBlue"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/space_distance"
+    android:paddingRight="@dimen/space_distance"
+    android:paddingTop="@dimen/space_distance">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fragment_about_me_user_icon_civ"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/user_default_icon_boy" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/space_distance"
+            android:layout_toRightOf="@id/fragment_about_me_user_icon_civ"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/fragment_about_me_username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="黑与白"
+                android:textColor="@color/mainColorWhite"
+                android:textSize="@dimen/small_title" />
+
+            <TextView
+                android:id="@+id/fragment_about_me_userid_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ID:12497557"
+                android:textColor="@color/mainColorWhite"
+                android:textSize="@dimen/text_word_tips" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="男 21岁 处女座"
+                android:textColor="@color/mainColorWhite"
+                android:textSize="@dimen/text_word_tips" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.5"
+            android:src="@mipmap/qr_code" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/small_icon"
+                android:layout_height="@dimen/small_icon"
+                android:src="@mipmap/level" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="初跑者"
+                android:textColor="@color/mainColorWhite"
+                android:textSize="@dimen/text_word_tips" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/small_icon"
+                android:layout_height="@dimen/small_icon"
+                android:src="@mipmap/energy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="100"
+                android:textColor="@color/mainColorWhite"
+                android:textSize="@dimen/text_word_tips" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/small_icon"
+                android:layout_height="@dimen/small_icon"
+                android:src="@mipmap/zan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="0"
+                android:textColor="@color/mainColorWhite"
+                android:textSize="@dimen/text_word_tips" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

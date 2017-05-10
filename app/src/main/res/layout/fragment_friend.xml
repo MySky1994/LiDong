@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbgColorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_status_bar"
+        android:background="@color/mainColorBlue" />
+
+    <include layout="@layout/fragment_friend_top_bar" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/fragment_friend_table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+    </android.support.design.widget.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_friend_content_layout"
+        android:layout_width="match_parent"
+        android:background="@color/mainColorWhite"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

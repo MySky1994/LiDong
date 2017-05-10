@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/space_distance"
+    android:layout_marginRight="@dimen/space_distance"
+    android:background="#e2efefef"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragment_friend_pop_window_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/space_distance"
+        android:paddingRight="@dimen/space_distance"
+        android:paddingTop="8dp"
+        android:text="扫一扫"
+        android:textSize="@dimen/small_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragment_friend_pop_window_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/space_distance"
+        android:paddingRight="@dimen/space_distance"
+        android:paddingTop="8dp"
+        android:text="添加好友"
+        android:textSize="@dimen/small_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragment_friend_pop_window_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingLeft="@dimen/space_distance"
+        android:paddingRight="@dimen/space_distance"
+        android:paddingTop="8dp"
+        android:text="加入跑团"
+        android:textSize="@dimen/small_title" />
+
+
+</LinearLayout>

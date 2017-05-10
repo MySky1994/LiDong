@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbgColorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_status_bar"
+        android:background="@color/mainColorBlue" />
+
+    <include layout="@layout/fragment_sport_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:background="@color/mainbgColorWhite"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.CombinedChart
+                android:id="@+id/fragment_sport_chart"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/mainColorWhite" />
+
+
+            <include layout="@layout/fragment_sport_start_running_layout" />
+
+            <include layout="@layout/fragment_sport_run_data_layout" />
+
+
+            <include layout="@layout/fragment_sport_jingcaituijian_layout" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

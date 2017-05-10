@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/half_space_distance"
+    android:layout_marginRight="@dimen/half_space_distance"
+    android:layout_marginTop="@dimen/half_space_distance"
+    android:background="@color/mainColorWhite"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom|center_horizontal"
+                android:text="累计里程(km)"
+                android:textColor="@color/wordColorGray"
+                android:textSize="@dimen/text_word_tips" />
+
+            <TextView
+                android:id="@+id/fragment_about_me_total_distance_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:text="0.00"
+                android:textSize="@dimen/bbig_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom|center_horizontal"
+                android:text="总次数"
+                android:textColor="@color/wordColorGray"
+                android:textSize="@dimen/text_word_tips" />
+
+            <TextView
+                android:id="@+id/fragment_about_me_total_frequency_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:text="0"
+                android:textSize="@dimen/bbig_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="bottom|center_horizontal"
+                android:text="总用时(h)"
+                android:textColor="@color/wordColorGray"
+                android:textSize="@dimen/text_word_tips" />
+
+            <TextView
+                android:id="@+id/fragment_about_me_total_time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:text="0.00"
+                android:textSize="@dimen/bbig_text" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/running_road" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/space_distance"
+        android:layout_marginRight="@dimen/space_distance"
+        android:layout_marginTop="@dimen/space_distance"
+        android:background="@color/split_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/half_space_distance"
+        android:layout_marginLeft="@dimen/space_distance"
+        android:layout_marginTop="@dimen/half_space_distance"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="活动一下筋骨，做好热身就去跑吧！"
+        android:textColor="@color/wordColorGray"
+        android:textSize="@dimen/text_word_tips" />
+
+</LinearLayout>

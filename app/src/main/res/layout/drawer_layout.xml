@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColorWhite"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@mipmap/drawer_ic_user_background"
+        android:paddingTop="@dimen/top_status_bar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="@dimen/space_distance"
+            android:src="@mipmap/user_default_icon_boy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/space_distance"
+            android:layout_marginLeft="@dimen/space_distance"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打着灯笼去开灯"
+                android:textColor="@color/wordColorDeepBlue"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="“运动让世界更美好”"
+                android:textSize="@dimen/text_word_tips" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/drawer_item_seletor"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_distance"
+            android:paddingRight="@dimen/space_distance">
+
+            <ImageView
+                android:layout_width="@dimen/select_tab_icon_size"
+                android:layout_height="@dimen/select_tab_icon_size"
+                android:layout_gravity="center"
+                android:src="@drawable/drawer_my_plan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_distance"
+                android:gravity="center"
+                android:text="我的计划"
+                android:textColor="@color/wordColorGray"
+                android:textSize="@dimen/small_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/drawer_item_seletor"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_distance"
+            android:paddingRight="@dimen/space_distance">
+
+            <ImageView
+                android:layout_width="@dimen/select_tab_icon_size"
+                android:layout_height="@dimen/select_tab_icon_size"
+                android:layout_gravity="center"
+                android:src="@drawable/drawer_my_active" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_distance"
+                android:gravity="center"
+                android:text="我的活动"
+                android:textColor="@color/wordColorGray"
+                android:textSize="@dimen/small_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/drawer_item_seletor"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_distance"
+            android:paddingRight="@dimen/space_distance">
+
+            <ImageView
+                android:layout_width="@dimen/select_tab_icon_size"
+                android:layout_height="@dimen/select_tab_icon_size"
+                android:layout_gravity="center"
+                android:src="@drawable/drawer_my_team" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_distance"
+                android:gravity="center"
+                android:text="我的跑团"
+                android:textColor="@color/wordColorGray"
+                android:textSize="@dimen/small_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/drawer_item_seletor"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_distance"
+            android:paddingRight="@dimen/space_distance">
+
+            <ImageView
+                android:layout_width="@dimen/select_tab_icon_size"
+                android:layout_height="@dimen/select_tab_icon_size"
+                android:layout_gravity="center"
+                android:src="@drawable/drawer_setting" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_distance"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="@color/wordColorGray"
+                android:textSize="@dimen/small_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/drawer_item_seletor"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_distance"
+            android:paddingRight="@dimen/space_distance">
+
+            <ImageView
+                android:layout_width="@dimen/select_tab_icon_size"
+                android:layout_height="@dimen/select_tab_icon_size"
+                android:layout_gravity="center"
+                android:src="@drawable/drawer_about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_distance"
+                android:gravity="center"
+                android:text="关于"
+                android:textColor="@color/wordColorGray"
+                android:textSize="@dimen/small_title" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

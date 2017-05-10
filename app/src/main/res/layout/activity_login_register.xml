@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login_register_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_login"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:padding="@dimen/space_distance"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_distance"
+        android:layout_marginRight="@dimen/space_distance"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/activity_login_register_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:hint="用户名"
+            android:textColorHint="@color/smallWordColorGray" />
+
+        <EditText
+            android:id="@+id/activity_login_register_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/smallWordColorGray" />
+
+        <EditText
+            android:id="@+id/activity_login_register_password_et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:hint="再次输入密码"
+            android:inputType="textPassword"
+            android:textColorHint="@color/smallWordColorGray" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_login_register_bt"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="@dimen/space_distance"
+        android:layout_marginRight="@dimen/space_distance"
+        android:layout_marginTop="@dimen/space_distance"
+        android:background="@drawable/running_status_bt_selector"
+        android:text="注册用户"
+        android:textColor="@color/mainColorWhite" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_distance"
+        android:layout_marginRight="@dimen/space_distance"
+        android:layout_marginTop="@dimen/space_distance">
+
+        <TextView
+            android:id="@+id/activity_login_register_back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="返回登录"
+            android:textColor="@color/wordColorDeepBlue"
+            android:textSize="@dimen/small_title" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="top_status_bar">24dp</dimen>
+    <dimen name="app_bar">56dp</dimen>
+    <dimen name="bottom_navigation_bar">48dp</dimen>
+    <dimen name="user_icon">64dp</dimen>
+    <dimen name="space_distance">16dp</dimen>
+    <dimen name="half_space_distance">8dp</dimen>
+
+
+    <dimen name="small_word_tips">12sp</dimen>
+    <dimen name="text_word_tips">14sp</dimen>
+    <dimen name="small_title">16sp</dimen>
+    <dimen name="appbar_text">20sp</dimen>
+    <dimen name="big_title">24sp</dimen>
+    <dimen name="bbig_text">34sp</dimen>
+    <dimen name="bbbig_text">45sp</dimen>
+    <dimen name="bbbbig_text">56sp</dimen>
+    <dimen name="bbbbbig_text">112sp</dimen>
+
+
+    <dimen name="start_running_bt">112sp</dimen>
+    <dimen name="small_icon">18dp</dimen>
+
+    <dimen name="select_tab_icon_size">24dp</dimen>
+    <dimen name="select_tab_text_size">17sp</dimen>
+
+    <dimen name="table_margin">0.5dp</dimen>
+
+
+    <dimen name="pic_size">96dp</dimen>
+    <dimen name="pic_margin">3dp</dimen>
+
+    <dimen name="adver_pic_size">72dp</dimen>
+
+</resources>
